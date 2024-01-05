@@ -1,0 +1,124 @@
+html {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1143px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 54px;
+}
+.header-menu a {
+  text-decoration: none;
+  color: black;
+}
+.header-menu a:hover {
+  border-bottom: 1px solid black;
+}
+footer {
+  background-color: #f3f3f3;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-menu {
+  display: flex;
+  list-style-type: none;
+  gap: 54px;
+}
+.footer-menu a {
+  text-decoration: none;
+  color: black;
+}
+.footer-menu a:hover {
+  border-bottom: 1px solid black;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+}
+.footer-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+  padding-right: 62px;
+  position: relative;
+  z-index: 2;
+}
+.yellow {
+  width: 25px;
+  height: 25px;
+  background-color: #fbf138;
+  border-radius: 50%;
+  border: none;
+  position: relative;
+  left: 8px;
+  bottom: 10px;
+  z-index: 1;
+}
+.social {
+  display: flex;
+  gap: 30px;
+}
+
+.workout {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.workout-title {
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 255px;
+}
+.workout-text1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+.workout-text2 {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 91px;
+}
+.workout-button {
+  background-color: #fbf138;
+  margin-left: 91px;
+  border: none;
+  padding: 20px 30px;
+  box-shadow: 0px 13px 24px 0px rgba(251, 241, 56, 0.3);
+}
+.workout-button-text {
+  font-size: 16px;
+  font-weight: 700;
+  color: #2b3541;
+}
+.workout-image {
+  max-width: 464px;
+  max-height: 850px;
+}
+.workout-girl {
+  max-width: 966px;
+  max-height: 930px;
+  position: relative;
+  bottom: 800px;
+  left: 500px;
+}
+main {
+  margin-bottom: 0;
+}
+.test {
+  background-image: url(../images/workout-bg.jpg);
+}
