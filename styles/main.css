@@ -75,6 +75,15 @@ footer {
 .social {
   display: flex;
   gap: 30px;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.social-in:hover {
+  transform: scale(1.5);
+}
+.social-fb:hover {
+  transform: scale(1.5);
 }
 
 .training {
