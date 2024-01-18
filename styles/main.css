@@ -440,7 +440,9 @@ html {
 }
 
 /*------------------------------------------------------------------------------------------------------------*/
-
+.about {
+  margin-bottom: 170px;
+}
 .about-main {
   display: flex;
   justify-content: space-between;
@@ -506,9 +508,13 @@ html {
 /*------------------------------------ПОДВАЛ САЙТА--------------------------------------------------------------------------*/
 footer {
   background-color: #f3f3f3;
+  height: 170px;
+}
+.footer {
+  margin-bottom: 21px;
 }
 .footer-main {
-  height: 149px;
+  padding-top: 56px;
   display: flex;
   align-items: center;
   justify-content: space-between;
