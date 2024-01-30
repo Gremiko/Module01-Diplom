@@ -1,5 +1,9 @@
 html {
   font-family: "Montserrat", sans-serif;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 
 .container {
@@ -42,7 +46,7 @@ html {
   transform: scale(1.5);
   transition: 0.8s;
 }
-
+/*----------------------------------------------------------------------------------*/
 .training {
   display: flex;
   flex-wrap: nowrap;
@@ -94,7 +98,6 @@ html {
   font-weight: 700;
   letter-spacing: 0.48px;
 }
-
 .trn-girl {
   background-image: url(../images/workout-bg.jpg);
   background-repeat: no-repeat;
@@ -137,21 +140,6 @@ html {
   gap: 20.02px;
 }
 
-.events-img::before,
-.events-text::before {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    180deg,
-    rgba(251, 241, 56, 0.5) 0%,
-    rgba(253, 249, 182, 0) 100%
-  );
-  opacity: 0;
-}
-
 .sign-up {
   position: absolute;
   top: 185px;
@@ -171,7 +159,19 @@ html {
   opacity: 0;
 }
 
-.events-img:hover::before,
+.events-text::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(251, 241, 56, 0.5) 0%,
+    rgba(253, 249, 182, 0) 100%
+  );
+  opacity: 0;
+}
 .events-text:hover::before {
   opacity: 1;
   transition: 0.3s;
@@ -182,11 +182,6 @@ html {
   transition: 0.3s;
 }
 
-.events-img {
-  position: absolute;
-  width: 367.322px;
-  height: 600px;
-}
 .events-text {
   padding-top: 20px;
   position: relative;
@@ -206,6 +201,9 @@ html {
   background-color: #fbf138;
   border: none;
   padding: 11px 20px;
+}
+.events-btn-text-mobile {
+  opacity: 0;
 }
 
 .date {
@@ -470,6 +468,14 @@ html {
   padding-right: 0;
   justify-content: space-between;
 }
+.about-text1 {
+  display: flex;
+  gap: 69px;
+}
+.about-text2 {
+  display: flex;
+  gap: 67px;
+}
 .about-text h2 {
   color: #2b3541;
   font-size: 18px;
@@ -576,4 +582,110 @@ footer {
 }
 .copyright a {
   color: #2b3541;
+}
+
+.events-bg1 {
+  background-image: url(../images/events/maraphon.png);
+  background-repeat: no-repeat;
+}
+
+.events-bg2 {
+  background-image: url(../images/events/Vebinar\ 1.png);
+  background-repeat: no-repeat;
+}
+
+.events-bg3 {
+  background-image: url(../images/events/Vebinar\ 2.png);
+  background-repeat: no-repeat;
+}
+
+/*-------------------------------------MODAL-----------------------------------*/
+
+.burger {
+  width: 29px;
+  height: 22px;
+  background-image: url(../images/burger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal {
+  background: #f3f3f3;
+  max-width: 587px;
+  min-height: 466px;
+  text-align: left;
+  position: absolute;
+  top: -600px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.8s;
+}
+.burger-close {
+  width: 20px;
+  height: 19px;
+  background-image: url(../images/burger-close.svg);
+  border: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 29px;
+}
+.modal-header img {
+  width: 78px;
+  height: 24px;
+}
+.modal-menu {
+  list-style-type: none;
+  padding-left: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 0;
+}
+.modal-menu li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.modal-menu a {
+  text-decoration: none;
+  color: #2b3541;
+}
+.line {
+  color: #2b3541;
+}
+.modal-icon {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  margin-bottom: 51px;
+}
+.modal-footer {
+  opacity: 0.4;
+  width: 100%;
+  height: 135px;
+  background-color: #2b3541;
+  display: flex;
+  justify-content: center;
+}
+.modal-footer-mobile {
+  margin-top: 35px;
+  opacity: 0;
+}
+.header-burger {
+  margin-right: 500px;
+  padding-left: 20px;
+}
+
+.logo-box {
+  display: flex;
 }

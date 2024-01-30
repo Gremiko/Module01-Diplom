@@ -12,13 +12,20 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/media.css" />
+    <link rel="icon" href="images/girl.ico" type="image/x-icon" />
   </head>
   <body>
     <!-- Начало Шапки сайта -->
     <header>
       <div class="container">
         <div class="header">
-          <a href="#"><img src="images/header-logo.svg" alt="Logo" /></a>
+          <div class="logo-box">
+            <a href="#"><img src="images/header-logo.svg" alt="Logo" /></a>
+            <div class="header-burger">
+              <button class="burger" onclick="openModal()"></button>
+            </div>
+          </div>
           <nav>
             <ul class="header-menu">
               <li><a href="#">Мероприятия</a></li>
@@ -62,7 +69,7 @@
                   <img src="images/arrow.svg" alt="" class="arrow" /></div
               ></a>
             </div>
-            <div class="trn-girl">
+            <div class="trn-girl girl-mobile">
               <img src="images/girl.png" alt="" />
             </div>
           </div>
@@ -72,8 +79,7 @@
         <div class="container">
           <h1 class="main-title-events">Ближайшие события</h1>
           <div class="events">
-            <div class="events-item">
-              <img src="images/events/maraphon.png" alt="" class="events-img" />
+            <div class="events-item events-bg1">
               <div class="events-text">
                 <p class="date">29.06 - 4.07</p>
                 <p class="title-events">
@@ -82,14 +88,12 @@
                 </p>
                 <a href="#" class="sign-up">Записаться</a>
                 <a href="#" class="events-btn-text">марафон</a>
+                <a href="#" class="events-btn-text-mobile">
+                  <img src="images/events/vector.svg" alt="" />
+                </a>
               </div>
             </div>
-            <div class="events-item">
-              <img
-                src="images/events/Vebinar 1.png"
-                alt=""
-                class="events-img"
-              />
+            <div class="events-item events-bg2">
               <div class="events-text">
                 <p class="date">9.07</p>
                 <p class="title-events">
@@ -98,22 +102,26 @@
                 </p>
                 <a href="#" class="sign-up">Записаться</a>
                 <a href="#" class="events-btn-text">вебинар</a>
+                <a href="#" class="events-btn-text-mobile">
+                  <img src="images/events/vector.svg" alt="" />
+                </a>
               </div>
             </div>
-            <div class="events-item">
-              <img
-                src="images/events/Vebinar 2.png"
-                alt=""
-                class="events-img"
-              />
-              <div class="events-text">
+            <div class="events-item events-bg3">
+              <div class="events-text text3">
                 <p class="date">15.07</p>
                 <p class="title-events">
                   Йога, как стиль<br />
                   жизни
                 </p>
                 <a href="#" class="sign-up">Записаться</a>
-                <a href="#" class="events-btn-text">вебинар</a>
+                <a href="#" class="events-btn-text events-btn-text3">вебинар</a>
+                <a
+                  href="#"
+                  class="events-btn-text-mobile events-btn-text-mobile3"
+                >
+                  <img src="images/events/vector.svg" alt="" />
+                </a>
               </div>
             </div>
           </div>
@@ -179,7 +187,11 @@
           <div class="distribution">
             <div class="distribution-text">
               <span class="distr-yellow"></span>
-              <h1>Подпишись на рассылку</h1>
+              <h1>
+                Подпишись<br class="mobile mobile3" />
+                на<br class="mobile2" />
+                рассылку
+              </h1>
             </div>
             <div class="item">
               <input
@@ -226,46 +238,55 @@
               <div class="group">
                 <h1>О компании</h1>
                 <p>
-                  Наша компания является одной из немногих, кто<br />
-                  предлагает фитнес услуги онлайн! Оставайтесь<br />
-                  с нами и вы сами увидите, что мы проводим<br />
+                  Наша компания является одной<br class="mobile" />
+                  из немногих, кто<br class="pc" />
+                  предлагает фитнес<br class="mobile" />
+                  услуги онлайн! Оставайтесь<br class="pc" />
+                  с нами<br class="mobile" />
+                  и вы сами увидите, что мы проводим<br class="mobile" /><br
+                    class="pc"
+                  />
                   не только онлайн-тренировки.
                 </p>
                 <button class="about-button">
                   <span>ЗАПИСАТЬСЯ</span>
                 </button>
               </div>
-              <img src="images/trainer.jpg" alt="" />
+              <img src="images/trainer.jpg" alt="" class="about-img-mobile" />
             </div>
             <ul class="about-text">
-              <li>
-                <h2>Экономия времени</h2>
-                <p>
-                  Не нужно тратить время<br />
-                  на дорогу
-                </p>
-              </li>
-              <li>
-                <h2>Индивидуальный подход</h2>
-                <p>
-                  Внимание тренера<br />
-                  пренадлежит только вам
-                </p>
-              </li>
-              <li>
-                <h2>Экономия времени</h2>
-                <p>
-                  Средняя цена одной<br />
-                  тренировки - 700₽
-                </p>
-              </li>
-              <li>
-                <h2>Опытный персонал</h2>
-                <p>
-                  Стаж работы у наших<br />
-                  тренеров от 5 лет
-                </p>
-              </li>
+              <div class="about-text1">
+                <li>
+                  <h2>Экономия времени</h2>
+                  <p>
+                    Не нужно тратить время<br />
+                    на дорогу
+                  </p>
+                </li>
+                <li>
+                  <h2>Индивидуальный подход</h2>
+                  <p>
+                    Внимание тренера<br />
+                    пренадлежит только вам
+                  </p>
+                </li>
+              </div>
+              <div class="about-text2">
+                <li>
+                  <h2>Экономия времени</h2>
+                  <p>
+                    Средняя цена одной<br />
+                    тренировки - 700₽
+                  </p>
+                </li>
+                <li>
+                  <h2>Опытный персонал</h2>
+                  <p>
+                    Стаж работы у наших<br />
+                    тренеров от 5 лет
+                  </p>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -287,14 +308,16 @@
                 <li><a href="#">О компании</a></li>
               </ul>
             </nav>
-            <div class="footer-social">
-              <span class="footer-yellow"></span>
-              <span class="footer-link"
-                ><a href="mailto:info@freefit.com">info@freefit.com</a></span
-              >
-              <div class="social">
-                <img src="images/in.svg" alt="Instagram" class="footer-in" />
-                <img src="images/fb.svg" alt="FB" class="footer-fb" />
+            <div class="footer-mobile">
+              <div class="footer-social">
+                <span class="footer-yellow"></span>
+                <span class="footer-link"
+                  ><a href="mailto:info@freefit.com">info@freefit.com</a></span
+                >
+                <div class="social footer-icon">
+                  <img src="images/in.svg" alt="Instagram" class="footer-in" />
+                  <img src="images/fb.svg" alt="FB" class="footer-fb" />
+                </div>
               </div>
             </div>
           </div>
@@ -308,5 +331,35 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <img src="/images/header-logo.svg" alt="" />
+        <button
+          class="burger-close"
+          id="modal-close"
+          onclick="closeModal()"
+        ></button>
+      </div>
+      <nav>
+        <ul class="modal-menu">
+          <li><a href="#">Мероприятия</a></li>
+          <hr class="line" />
+          <li><a href="#">Расписание</a></li>
+          <hr class="line" />
+          <li><a href="#">О компании</a></li>
+        </ul>
+      </nav>
+      <div class="social modal-icon">
+        <img src="images/in.svg" alt="Instagram" class="footer-in" />
+        <img src="images/fb.svg" alt="FB" class="footer-fb" />
+      </div>
+      <div class="modal-footer">
+        <button class="trn-button modal-footer-mobile">
+          <span>УЗНАТЬ ПОДРОБНЕЕ</span>
+        </button>
+      </div>
+    </div>
+    <script src="/scripts/scripts.js"></script>
   </body>
 </html>
