@@ -575,6 +575,10 @@
     justify-content: center;
     align-items: center;
   }
+  .modal-icon {
+    position: relative;
+    bottom: 10px;
+  }
 }
 @media screen and (max-width: 431px) {
   .trn-girl img {
